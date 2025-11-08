@@ -1,0 +1,12 @@
+# metadata of our application
+apiVersion: v2
+name: nginx
+version: 0.1.0 # chart version
+description: helm chart of nginx
+type: application
+appVersion: "1.0.0" # app version
+keywords:
+  - app
+  - demo
+maintainers:
+  - name: chinna
