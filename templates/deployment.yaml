@@ -5,7 +5,7 @@ metadata:
   labels: # deployment labels
     app: myapp
 spec:
-  replicas: "{{ .Values.deployment.replicaCount }}"
+  replicas: {{ .Values.deployment.replicaCount }}
   selector:
     matchLabels:  # these labels shpuld match with pod labels
       app: nginx
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: "nginx.{{ .Values.deployment.imageVersion }}"
+        image: nginx.{{ .Values.deployment.imageVersion }}
         ports:
         - containerPort: 80
